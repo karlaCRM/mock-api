@@ -1,9 +1,8 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+  "coaches": [
+    { "id": 1, "name": "Christian" }, { "id": 2, "name": "Ivy" }, { "id": 3, "name": "Deysi" }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "students": [
+    { "id": 1, "name": "Laly" }, { "id": 2, "name": "Gaby" }
+  ]
 }
