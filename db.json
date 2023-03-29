@@ -1,8 +1,396 @@
 {
-  "coaches": [
-    { "id": 1, "name": "Christian" }, { "id": 2, "name": "Ivy" }, { "id": 3, "name": "Deysi" }
+  "users": [
+    {
+      "email": "waiter@burgerqueen.com",
+      "password": "$2a$10$wEulNfxh7MimMaOBp6SXEeS8qbyzTVrx6YjWBB52lvy439YxVOALm",
+      "role": "waiter",
+      "admin": false,
+      "employee": "Ritalin",
+      "id": 1
+    },
+    {
+      "email": "kitchen@burgerqueen.com",
+      "password": "$2a$10$CvdlyO2ESOL.g6Kjl6iBWuavBZpURYzVhpAE9aq1pgkH/jGPeHUne",
+      "role": "kitchen",
+      "admin": false,
+      "employee": "Nicolas",
+      "id": 2
+    },
+    {
+      "email": "admin@burgerqueen.com",
+      "password": "$2a$10$ashUDUrsai5jJ.aUN0459e3iY6fS0GKNMKBoW0gjZUdq3TOyYFTr.",
+      "role": "admin",
+      "admin": true,
+      "employee": "Miguita",
+      "id": 3
+    }
   ],
-  "students": [
-    { "id": 1, "name": "Laly" }, { "id": 2, "name": "Gaby" }
+  "products": [
+    {
+      "id": "1",
+      "name": "Americano",
+      "price": 5,
+      "type": "breakFast",
+      "subtype": "hot beverage",
+      "dataEntry": "02/02/202",
+      "quantity": 1
+    },
+    {
+      "id": "2",
+      "name": "Latte",
+      "price": 7,
+      "type": "breakFast",
+      "subtype": "hot beverage",
+      "dataEntry": "02/02/2023",
+      "quantity": 1
+    },
+    {
+      "id": "3",
+      "name": "Ham & Cheese Sandwich",
+      "price": 10,
+      "type": "breakFast",
+      "subtype": "main dish",
+      "dataEntry": "02/02/2023",
+      "quantity": 1
+    },
+    {
+      "id": "4",
+      "name": "Fruit Juice",
+      "price": 7,
+      "type": "breakFast",
+      "subtype": "cold beverage",
+      "dataEntry": "02/02/2023",
+      "quantity": 1
+    },
+    {
+      "id": "5",
+      "name": "Simple Burger",
+      "price": 5,
+      "type": "meal",
+      "subtype": "main dish",
+      "dataEntry": "02/02/2023",
+      "quantity": 1
+    },
+    {
+      "id": "6",
+      "name": "Double Burger",
+      "price": 15,
+      "type": "meal",
+      "subtype": "main dish",
+      "dataEntry": "02/02/2023",
+      "quantity": 1
+    },
+    {
+      "id": "7",
+      "name": "Fries",
+      "price": 5,
+      "type": "meal",
+      "subtype": "extras",
+      "dataEntry": "02/02/2023",
+      "quantity": 1
+    },
+    {
+      "id": "8",
+      "name": "Onion Rings",
+      "price": 5,
+      "type": "meal",
+      "subtype": "extras",
+      "dataEntry": "02/02/2023",
+      "quantity": 1
+    },
+    {
+      "id": "9",
+      "name": "Water 500ml",
+      "price": 5,
+      "type": "meal",
+      "subtype": "cold beverage",
+      "dataEntry": "02/02/2023",
+      "quantity": 1
+    },
+    {
+      "id": "10",
+      "name": "Water 750ml",
+      "price": 5,
+      "type": "meal",
+      "subtype": "cold beverage",
+      "dataEntry": "02/02/2023",
+      "quantity": 1
+    },
+    {
+      "id": "11",
+      "name": "Soda 500ml",
+      "price": 7,
+      "type": "meal",
+      "subtype": "cold beverage",
+      "dataEntry": "02/02/2023",
+      "quantity": 1
+    },
+    {
+      "id": "12",
+      "name": " Soda 750ml",
+      "price": 10,
+      "type": "meal",
+      "subtype": "cold beverage",
+      "dataEntry": "02/02/2023",
+      "quantity": 1
+    }
+  ],
+  "orders": [
+    {
+      "data": {
+        "customer": "AAAA",
+        "waiter": "Karla",
+        "table": "3435"
+      },
+      "order": [
+        {
+          "producto": "Cáfe con leche ",
+          "cantidad": 7
+        },
+        {
+          "producto": "Americano",
+          "cantidad": 3
+        }
+      ],
+      "date": "4:28 PM",
+      "id": 1
+    },
+    {
+      "data": {
+        "customer": "Karla",
+        "waiter": "Pilar",
+        "table": "12"
+      },
+      "order": [
+        {
+          "producto": "Ham & Cheese Sandwich",
+          "cantidad": 3
+        },
+        {
+          "producto": "Water 500ml",
+          "cantidad": 4
+        },
+        {
+          "producto": "Americano",
+          "cantidad": 3
+        }
+      ],
+      "date": "Mar 9, 2:05 PM",
+      "status": "ready",
+      "id": 2
+    },
+    {
+      "data": {
+        "customer": "Pilar",
+        "waiter": "Karla",
+        "table": "1"
+      },
+      "order": [
+        {
+          "producto": "Fruit Juice",
+          "cantidad": 4
+        },
+        {
+          "producto": "Water 750ml",
+          "cantidad": 2
+        },
+        {
+          "producto": "Water 500ml",
+          "cantidad": 4
+        }
+      ],
+      "date": "Mar 9, 2:06 PM",
+      "status": "pending",
+      "id": 3
+    },
+    {
+      "data": {
+        "customer": "aBCD",
+        "waiter": "XZdfvf",
+        "table": "3345"
+      },
+      "order": [
+        {
+          "producto": "Latte",
+          "cantidad": 6
+        },
+        {
+          "producto": "Fries",
+          "cantidad": 3
+        }
+      ],
+      "date": "Mar 9, 2:30 PM",
+      "status": "ready",
+      "id": 4
+    },
+    {
+      "data": {
+        "customer": "ABC",
+        "waiter": "PRUEBA",
+        "table": "22"
+      },
+      "order": [
+        {
+          "producto": "Water 500ml",
+          "cantidad": 3
+        },
+        {
+          "producto": "Water 750ml",
+          "cantidad": 1
+        },
+        {
+          "producto": "Fruit Juice",
+          "cantidad": 1
+        },
+        {
+          "producto": "Soda 500ml",
+          "cantidad": 1
+        }
+      ],
+      "date": "Mar 21, 2:28 PM",
+      "status": "ready",
+      "id": 5
+    },
+    {
+      "data": {
+        "customer": "AAAAA",
+        "waiter": "PRUEBAAA",
+        "table": "24"
+      },
+      "order": [
+        {
+          "producto": "Latte",
+          "cantidad": 4
+        },
+        {
+          "producto": "Onion Rings",
+          "cantidad": 2
+        },
+        {
+          "producto": "Fries",
+          "cantidad": 2
+        }
+      ],
+      "date": "Mar 21, 2:39 PM",
+      "status": "ready",
+      "id": 6
+    },
+    {
+      "data": {
+        "customer": "dvdf",
+        "waiter": "section",
+        "table": "435"
+      },
+      "order": [
+        {
+          "producto": "Ham & Cheese Sandwich",
+          "cantidad": 2
+        },
+        {
+          "producto": "Water 500ml",
+          "cantidad": 2
+        },
+        {
+          "producto": "Water 750ml",
+          "cantidad": 2
+        }
+      ],
+      "date": "Mar 21, 2:40 PM",
+      "status": "ready",
+      "id": 7
+    },
+    {
+      "data": {
+        "customer": "f f",
+        "waiter": "ng-container",
+        "table": "43"
+      },
+      "order": [
+        {
+          "producto": "Water 750ml",
+          "cantidad": 3
+        },
+        {
+          "producto": "Water 500ml",
+          "cantidad": 2
+        },
+        {
+          "producto": "Onion Rings",
+          "cantidad": 2
+        }
+      ],
+      "date": "Mar 21, 2:41 PM",
+      "status": "ready",
+      "id": 8
+    },
+    {
+      "data": {
+        "customer": "fgbdf",
+        "waiter": "345dfgdf",
+        "table": "fgdf"
+      },
+      "order": [
+        {
+          "producto": "Water 500ml",
+          "cantidad": 4
+        },
+        {
+          "producto": "Onion Rings",
+          "cantidad": 3
+        },
+        {
+          "producto": "Fries",
+          "cantidad": 3
+        }
+      ],
+      "date": "Mar 21, 2:44 PM",
+      "status": "ready",
+      "id": 9
+    },
+    {
+      "data": {
+        "customer": "fvdf",
+        "waiter": "order2",
+        "table": "387"
+      },
+      "order": [
+        {
+          "producto": "Water 750ml",
+          "cantidad": 3
+        },
+        {
+          "producto": "Water 500ml",
+          "cantidad": 5
+        },
+        {
+          "producto": "Onion Rings",
+          "cantidad": 3
+        }
+      ],
+      "date": "Mar 21, 2:44 PM",
+      "status": "ready",
+      "id": 10
+    },
+    {
+      "data": {
+        "customer": "aaaa",
+        "waiter": "aaa",
+        "table": "345"
+      },
+      "order": [
+        {
+          "producto": "Ham & Cheese Sandwich",
+          "cantidad": 4
+        },
+        {
+          "producto": "Water 500ml",
+          "cantidad": 4
+        }
+      ],
+      "date": "Mar 21, 3:08 PM",
+      "status": "ready",
+      "id": 11,
+      "dateKitchen": "3:08 PM"
+    }
   ]
 }
